@@ -33,6 +33,8 @@ rm $INSTALL_LOCATION/*.pyc > /dev/null 2>&1
 exit 0
 EOF
 
+chmod +x ./${PACKAGE_NAME}/control/prerm
+
 # Create the debian-binary file
 cat > ./${PACKAGE_NAME}/debian-binary <<EOF
 2.0
