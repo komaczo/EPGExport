@@ -650,7 +650,7 @@ class EPGExportConfiguration(Screen, ConfigListScreen):
         	choice = self["config"].getCurrent()                                    
         	current=choice[1]                
 		hostname=config.plugins.epgexport.hostname
-		if config.plugins.epgexport.channelid.value=="xml" and not os.path.exists("/etc/epgexport/custom.channels.xml"):
+		if config.plugins.epgexport.channelid.value=="xml" and not os_path.exists("/etc/epgexport/custom.channels.xml"):
 			config.plugins.epgexport.channelid.value="name"
         	if choice != None:        
 			if current != hostname:
